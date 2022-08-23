@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <main>
+        
+        <!-- Seccion de ingreso de texto -->
+        <section class="input">            
+            <img src="assets/img/Logo.png" alt="" class="logo">
+                <textarea name="mensaje" id="msj" placeholder="Ingrese el texto aqui"></textarea>
+                <p class=""><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+                <div class="buttons">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+        </section>        
+
+
+        <section class="output">
+            <div class="inputEmpty ">
+
+                <img src="assets/img/Muñeco.png" alt="" srcset="">
+                <div>
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>                
+
+            </div>
+
+            <div class="inputOn off">
+                <p></p>
+                <img src="assets/img/Muñeco.png" alt="" srcset="">
+                <button id="copiar">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="assets/js/encriptator.js"></script>
+    <script src="assets/js/encriptator2.js"></script>
+    <script src="https://kit.fontawesome.com/97b2540957.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- lorem ipsum dolor sit amet, consectetur adip-->

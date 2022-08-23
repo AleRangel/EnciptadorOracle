@@ -29,7 +29,7 @@ class Encriptador{
             alertaP.classList.remove("valido");
             alertaP.classList.add("invalido")
             
-            console.log("xdd");
+            
         }if (this.mensaje.value.length == 0) {
             alertaP.classList.remove("invalido")
             alertaP.classList.remove("valido");
@@ -65,7 +65,11 @@ class Encriptador{
             .catch(err => {
                 alert("Error al copiar el texto, err")
             })
+            this.output.classList.add("off");
+            this.output.children[1].classList.remove("off");
+            this.input.classList.remove("off");
             this.output.children[0].innerHTML = "";
+            
             
         })
     }
@@ -86,7 +90,7 @@ class Encriptador{
         const mensajeEncriptado = this.mensaje.value.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
         this.mensajeEncriptado = mensajeEncriptado
         this.output.children[0].innerHTML = this.mensajeEncriptado;
-        
+        this.output.children[1].classList.add("off")
         this.mensaje.value = "";
     }
 
